@@ -51,16 +51,19 @@ st.dataframe(
 
 # Display the data as an Altair chart using `st.altair_chart`.
 df_chart = pd.melt(
-    df_reshaped.reset_index(), id_vars="year", var_name="genre", value_name="gross"
+    df_reshaped.reset_index(), id_vars="year", var_name="genre", value_name="popularity"
 )
 chart = (
     alt.Chart(df_chart)
     .mark_line()
     .encode(
         x=alt.X("year:N", title="Year"),
-        y=alt.Y("gross:Q", title="Gross earnings ($)"),
+        y=alt.Y("popularity:Q", title="Gross earnings ($)"),
         color="genre:N",
     )
-    .properties(height=320)
+    .properties(height=420)
 )
 st.altair_chart(chart, use_container_width=True)
+
+
+
