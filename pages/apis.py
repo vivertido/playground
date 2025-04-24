@@ -22,7 +22,7 @@ if st.button("Fetch Campus Data"):
         fetch_url = base_url+campus_search_endpoint+chosen_campus+"?key="+api_key
         data = requests.get(fetch_url).json()
         
-       # st.json(data, expanded=True)   
+        st.json(data, expanded=True)   
 
         tab1, tab2, tab3 = st.tabs(["Overview", "Demographics", "Feeder Schools"])
  
