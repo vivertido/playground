@@ -1,8 +1,6 @@
-# 🎬 Movies dataset template
+# 🎬 streamlit Playground Demo
 
-A simple Streamlit app showing movie data from [The Movie Database (TMDB)](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata). 
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://movies-dataset-template.streamlit.app/)
+Branch of the Streamlit app showing how to build out a front-end for an API service. 
 
 ### How to run it on your own machine
 
@@ -17,3 +15,6 @@ A simple Streamlit app showing movie data from [The Movie Database (TMDB)](https
    ```
    $ streamlit run streamlit_app.py
    ```
+
+### APIS.py
+This branch has a built out multi-tab Streamlit app that calls uses the UC High School Admissions API project (must be running) to display API data. 
