@@ -1,4 +1,4 @@
-# 🎬 streamlit Playground Demo
+# Streamlit Playground Demo
 
 Branch of the Streamlit app showing how to build out a front-end for an API service. 
 
